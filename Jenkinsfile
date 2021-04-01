@@ -11,9 +11,9 @@ pipeline{
         }
         stage("provide_message"){
             steps{
-                '''sh
+                sh"""
                 echo "the build has ran" 
-                '''
+                """
             }
         }
     }
