@@ -10,7 +10,7 @@ pipeline{
         stage("provide_message"){
             steps{
                 sh"""
-                echo "the build has ran" 
+                echo "$GIT_TAG" 
                 """
             }
         }
