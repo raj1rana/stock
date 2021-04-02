@@ -13,7 +13,7 @@ pipeline{
         stage("provide_message"){
             steps{
                 sh"""
-                echo "$GIT_TAG" 
+                 ls -la 
                 """
             }
         }
